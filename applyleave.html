@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Leave</title>
+    <link rel="stylesheet" href="employeefes.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Apply for Leave</h2>
+        <form id="leaveForm">
+            <label for="employeename">Employee Name:</label>
+            <input type="text" id="employeeName" placeholder="Your Name" required>
+            <label for="leaveStartDate">Leave Start Date:</label>
+            <input type="date" id="leaveStartDate" required>
+            <label for="leaveEndDate">Leave End Date:</label>
+            <input type="date" id="leaveEndDate" required>
+            <label for="reason">Reason for Leave:</label><br>
+            <textarea id="reason" rows="4" cols="50" required></textarea><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="applyleave.js"></script>
+</body>
+</html>

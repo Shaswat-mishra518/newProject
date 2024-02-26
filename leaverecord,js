@@ -1,0 +1,28 @@
+// Sample leave records data (replace with your actual data)
+var leaveRecords = [
+  { name: "Rohit", startDate: "2024-02-01", endDate: "2024-02-03", reason: "Vacation" },
+  { name: "Ram", startDate: "2024-02-10", endDate: "2024-02-14", reason: "Sick leave" },
+  { name: "Rohan", startDate: "2024-02-01", endDate: "2024-02-03", reason: "Vacation" },
+  { name: "Shiva", startDate: "2024-02-10", endDate: "2024-02-14", reason: "Sick leave" }
+
+
+];
+
+// Function to display leave records
+function displayLeaveRecords() {
+  var tableBody = document.getElementById('leaveRecordsBody');
+  tableBody.innerHTML = ''; // Clear existing rows
+  
+  leaveRecords.forEach(function(record) {
+    var row = tableBody.insertRow();
+    row.insertCell().textContent = record.name;
+    row.insertCell().textContent = record.startDate;
+    row.insertCell().textContent = record.endDate;
+    row.insertCell().textContent = record.reason;
+  });
+}
+
+// Call the function to display leave records when the page loads
+window.onload = function() {
+  displayLeaveRecords();
+};
